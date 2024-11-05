@@ -1,6 +1,8 @@
 
 # Screenshot to Code
+<img width="1469" alt="Screenshot 2024-11-05 at 7 45 45 PM" src="https://github.com/user-attachments/assets/4268013a-a20a-4ecf-a55e-b073104386f0">
 
+## Overview
 A React application that allows users to upload screenshots or record their screens to generate corresponding HTML/CSS/JavaScript code. The generated code is displayed in a VSCode-friendly format and can be copied to the clipboard for easy use in development.
 
 ## Features
