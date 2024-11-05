@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Screenshot to Code
 
-First, run the development server:
+A React application that allows users to upload screenshots or record their screens to generate corresponding HTML/CSS/JavaScript code. The generated code is displayed in a VSCode-friendly format and can be copied to the clipboard for easy use in development.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Upload Screenshots**: Users can upload screenshots (PNG, JPG) to generate code.
+- **Screen Recording**: Users can record their screens, and the application will generate code based on the recorded actions.
+- **Video Upload**: Supports uploading MP4 videos to generate code based on video content.
+- **Code Generation**: Automatically generates HTML/CSS/JavaScript code based on user input.
+- **Preview Feature**: Live preview of the generated code within the application.
+- **Copy to Clipboard**: Easily copy the generated code to the clipboard with one click.
+- **Framework and Model Selection**: Choose from various frameworks (React, HTML, etc.) and models for code generation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **React**: Frontend framework for building the user interface.
+- **Tailwind CSS**: Utility-first CSS framework for styling the application.
+- **Axios**: Library for making HTTP requests to handle file uploads.
+- **Lucide React**: Icon library for rendering icons in the application.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone https://github.com/yourusername/screenshot-to-code.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Navigate to the project directory**:
 
-## Deploy on Vercel
+   ```bash
+   cd screenshot-to-code
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Install dependencies**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+4. **Run the application**:
+
+   ```bash
+   npm start
+   ```
+
+   Open your browser and go to `http://localhost:3000` to see the application in action.
+
+## Usage
+
+1. Upload a screenshot by dragging and dropping it into the upload area or clicking to select a file.
+2. Record your screen by clicking the "Start Recording" button. Stop the recording to generate code based on the actions taken during the recording.
+3. Optionally, upload a video file to generate code.
+4. Select the desired framework and model from the dropdowns.
+5. Click the "Generate Code" button to create the code.
+6. Use the "Copy" button to copy the generated code to your clipboard for use in your projects.
+7. View the live preview of the generated code in the application.
