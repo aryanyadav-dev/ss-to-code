@@ -2,10 +2,10 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
 
 const API_KEYS = {
-  chatGPT: process.env.CHATGPT_API_KEY, // Replace with your ChatGPT API Key
-  gemini: process.env.GEMINI_API_KEY, // Replace with your Gemini API Key
-  claude: process.env.CLAUDE_API_KEY, // Replace with your Claude API Key
-  llama: process.env.LLAMA_API_KEY, // Replace with your Llama API Key
+  chatGPT: process.env.CHATGPT_API_KEY, 
+  gemini: process.env.GEMINI_API_KEY, 
+  claude: process.env.CLAUDE_API_KEY, 
+  llama: process.env.LLAMA_API_KEY, 
 };
 
 const generateCode = async (imageBase64: string, framework: string, model: string) => {

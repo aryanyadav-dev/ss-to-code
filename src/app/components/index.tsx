@@ -2,7 +2,7 @@
 
 import { useState, useRef } from 'react';
 import axios from 'axios';
-import { Upload, Code, Copy, Check, Image, Video } from 'lucide-react';
+import { Upload,Copy, Check,Video } from 'lucide-react';
 
 interface FileState {
   file: File | null;
@@ -53,7 +53,6 @@ const ScreenshotToCode = () => {
           },
         });
 
-        // Handle the response, assuming it contains the generated code
         if (response.data) {
           setGeneratedCode(response.data.generatedCode);
         }
